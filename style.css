@@ -58,6 +58,24 @@ img {
 
 @media only screen and (max-width: 768px) {
   .container {
-    padding: 0 5rem;
+    padding: 0 3rem;
   }
+}
+
+.navigation {
+  padding: 1.6rem 0;
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: var(--black);
+}
+
+.logo span {
+  color: var(--pink);
 }
