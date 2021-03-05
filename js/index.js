@@ -20,3 +20,16 @@ closeBtn.addEventListener("click", () => {
     document.body.classList.remove("show");
   }
 });
+
+const navBar = document.querySelector(".navigation");
+const navHeight = navBar.getBoundingClientRect().height;
+console.log(navHeight);
+
+window.addEventListener("scroll", () => {
+  const scrollHeight = window.pageYOffset;
+  if (scrollHeight > navHeight) {
+    navBar.classList.add("fix-nav");
+  } else {
+    navBar.classList.remove("fix-nav");
+  }
+});
